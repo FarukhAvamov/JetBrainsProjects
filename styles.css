@@ -1,0 +1,61 @@
+
+
+header {
+    font-family: 'STIX Two Math', serif;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}
+
+.mainContainer {
+    min-height: 350px;
+    min-width: 350px;
+    height: 500px;
+    width: 600px;
+    align-content: center;
+    border: 2px outset;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+
+}
+
+#input-task {
+    margin-top: 50px;
+    width: 350px;
+}
+
+#add-task-button {
+    align-content: flex-end;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.delete-btn {
+    height: 15px;
+    width: 13px;
+}
+
+span {
+    color: white;
+}
+
+ul li #check:checked::after {
+    content: '\2714';
+    font-size: 20px;
+    position: absolute;
+    left: 7px;
+    color: black;
+}
+
+ul li input[type='checkbox']:checked+span{
+    text-decoration: line-through;
+    color: rgb(0, 0, 0);
+}
+.item {
+    color: black;
+}
